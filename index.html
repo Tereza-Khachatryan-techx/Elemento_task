@@ -59,6 +59,7 @@
       </nav>
     </header>
     <main>
+      <!-- Hero Page (first section) -->
       <section class="page-hero">
         <div class="page-hero-infos">
           <h1 class="heading">Control your home</h1>
@@ -70,15 +71,16 @@
             Control everything with just one device
           </p>
           <div class="dash"></div>
-          <div class="page-hero-links">
+          <div class="page-hero-links mobile-store-page-hero">
             <div class="store">
               <img
                 src="assets/apple.svg"
                 width="20.76px"
                 height="25.51px"
                 alt="Apple Icon"
+                class="apple-icon"
               />
-              <a class="page-hero-link" href="#">
+              <a class="page-hero-link mobile-gray-link" href="#">
                 Download on the <span class="link-span">App Store</span>
               </a>
             </div>
@@ -88,8 +90,9 @@
                 width="23.09px"
                 height="25.75px"
                 alt="Google Play Icon"
+                class="googlePlay-icon"
               />
-              <a class="page-hero-link" href="#">
+              <a class="page-hero-link mobile-gray-link" href="#">
                 GET IT ON <span class="link-span">Google Play</span>
               </a>
             </div>
@@ -102,6 +105,7 @@
           />
         </div>
       </section>
+      <!-- "How it works" (section 2) -->
       <section class="section-main">
         <h1 class="section-title how-works">How it works</h1>
         <h1 class="mobile-heading connectivity">Connectivity</h1>
@@ -118,12 +122,14 @@
         <div class="workflow-container">
           <div class="workflow-container-item">
             <div class="item-heading-container">
-              <img
-                src="assets/Clock.svg"
-                alt="Time Icon"
-                width="100px"
-                height="100px"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="assets/Clock.svg"
+                  alt="Time Icon"
+                  width="76"
+                  height="72"
+                />
+              </div>
               <h2 class="item-heading">Time management</h2>
             </div>
             <div class="item-body-container">
@@ -141,12 +147,14 @@
           </div>
           <div class="workflow-container-item">
             <div class="item-heading-container">
-              <img
-                src="assets/support.svg"
-                alt="Support Icon"
-                width="100px"
-                height="100px"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="assets/support.svg"
+                  alt="Support Icon"
+                  width="76px"
+                  height="72px"
+                />
+              </div>
               <h2 class="item-heading">Free Support</h2>
             </div>
             <div class="item-body-container">
@@ -164,12 +172,14 @@
           </div>
           <div class="workflow-container-item">
             <div class="item-heading-container">
-              <img
-                src="assets/Calendar.svg"
-                alt="Calendar Icon"
-                width="100px"
-                height="100px"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="assets/Calendar.svg"
+                  alt="Calendar Icon"
+                  width="66px"
+                  height="65px"
+                />
+              </div>
               <h2 class="item-heading">Schedule</h2>
             </div>
             <div class="item-body-container">
@@ -187,6 +197,7 @@
           </div>
         </div>
       </section>
+      <!-- Features (section 3) -->
       <section class="section-main features">
         <h1 class="section-title">Features</h1>
         <h2 class="section-heading">Breakthrough functionalities</h2>
@@ -204,6 +215,7 @@
               alt="Setting Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -217,8 +229,9 @@
             <img
               src="assets/Clock.svg"
               alt="Clock Icon"
-              width="40px"
-              height="40px"
+              width="38px"
+              height="38px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -234,6 +247,7 @@
               alt="Support Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -249,6 +263,7 @@
               alt="Connect Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -264,6 +279,7 @@
               alt="Electricity Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -279,6 +295,7 @@
               alt="Device Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -288,12 +305,13 @@
               </p>
             </div>
           </div>
-          <div class="feature">
+          <div class="feature mobile-hidden-feature">
             <img
               src="assets/Wifi.svg"
               alt="Wifi Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -303,12 +321,13 @@
               </p>
             </div>
           </div>
-          <div class="feature">
+          <div class="feature mobile-hidden-feature">
             <img
               src="assets/Device.svg"
               alt="Device Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -318,12 +337,13 @@
               </p>
             </div>
           </div>
-          <div class="feature">
+          <div class="feature mobile-hidden-feature">
             <img
               src="assets/Temperature.svg"
               alt="Temperature Icon"
               width="40px"
               height="40px"
+              class="feature-img"
             />
             <div class="feature-card">
               <h3 class="feature-name">Easy to setup</h3>
@@ -335,6 +355,7 @@
           </div>
         </div>
       </section>
+      <!-- Testimonials (section 4) -->
       <section class="section-main testimonials">
         <h1 class="section-title testimonials-title">Testimonials</h1>
         <h2 class="section-heading">Our happy customers</h2>
@@ -399,8 +420,12 @@
           with it, and this article will tell you the best way to download free
           song for Ipod.
         </p>
-        <h3 class="section-heading">Genevieve McCarthy</h3>
-        <p class="section-description">Chief Executive Officer</p>
+        <h3 class="section-heading testimonials-full-name">
+          Genevieve McCarthy
+        </h3>
+        <p class="section-description testimonials-desc">
+          Chief Executive Officer
+        </p>
         <div class="indicator">
           <span class="indicator-item blue"></span>
           <span class="indicator-item"></span>
@@ -409,6 +434,7 @@
           <span class="indicator-item"></span>
         </div>
       </section>
+      <!-- Pess (section 5) -->
       <section class="section-main press">
         <h1 class="section-title">Press</h1>
         <h2 class="section-heading">Everyone is talking about us</h2>
@@ -418,7 +444,7 @@
           environments.
         </p>
         <div class="cards">
-          <div class="card">
+          <div class="card mobile-hidden-card">
             <div class="logo-wrapper">
               <img
                 src="assets/Techcrunch.svg"
@@ -434,6 +460,24 @@
             <a href="#" class="article-link">Read article</a>
           </div>
           <div class="card">
+            <div class="card-arrows">
+              <div class="arrow-left">
+                <img
+                  src="assets/arrow-left.svg"
+                  alt="Arrow Left"
+                  width="23px"
+                  height="22px"
+                />
+              </div>
+              <div class="arrow-right">
+                <img
+                  src="assets/arrow-right.svg"
+                  alt="Arrow Right"
+                  width="23px"
+                  height="22px"
+                />
+              </div>
+            </div>
             <div class="logo-wrapper">
               <img
                 src="assets/Mashable.svg"
@@ -448,7 +492,7 @@
             </p>
             <a href="#" class="article-link">Read article</a>
           </div>
-          <div class="card">
+          <div class="card mobile-hidden-card">
             <div class="logo-wrapper">
               <img
                 src="assets/Y combinator.svg"
@@ -464,16 +508,26 @@
             <a href="#" class="article-link">Read article</a>
           </div>
         </div>
+        <div class="indicator card-indicator">
+          <span class="indicator-item blue"></span>
+          <span class="indicator-item"></span>
+          <span class="indicator-item"></span>
+          <span class="indicator-item"></span>
+          <span class="indicator-item"></span>
+        </div>
       </section>
+      <!-- Become one of the firsts to get (section 6)  -->
       <section class="section-main become-first">
         <div class="wrapper">
-          <h1 class="become-first-heading">Become one of the firsts to get it</h1>
+          <h1 class="become-first-heading">
+            Become one of the firsts to get it
+          </h1>
           <p class="wrapper-description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
-          <div class="page-hero-links">
+          <div class="page-hero-links mobile-store">
             <div class="store become-first-store">
               <img
                 src="assets/apple.svg"
@@ -499,11 +553,115 @@
           </div>
         </div>
         <div class="image-wrapper">
-          <img src="assets/Floating Cards.svg" width="305px" height="87px" alt="Cards" class="floating-cards-img"/>
-          <img src="assets/image.svg" width="609px" height="834px" alt="Image" class="person-img"/>
+          <img
+            src="assets/Floating Cards.svg"
+            width="305px"
+            height="87px"
+            alt="Cards"
+            class="floating-cards-img"
+          />
+          <img
+            src="assets/image.svg"
+            width="609px"
+            height="834px"
+            alt="Image"
+            class="person-img"
+          />
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo-wrapper">
+        <img
+          src="assets/Logo Copy.svg"
+          alt="Elemento Logo"
+          width="174px"
+          height="28px"
+        />
+      </div>
+      <div class="footer-website-links">
+        <div class="footer-link">
+          <a href="#">
+            <img
+              src="assets/facebook.svg"
+              alt="Facebook Icon"
+              width="24px"
+              height="24px"
+            />
+          </a>
+        </div>
+        <div class="footer-link">
+          <a href="#">
+            <img
+              src="assets/instagram.svg"
+              alt="Instagram Icon"
+              width="24px"
+              height="24px"
+            />
+          </a>
+        </div>
+        <div class="footer-link">
+          <a href="#">
+            <img
+              src="assets/twitter.svg"
+              alt="X Icon"
+              width="24px"
+              height="24px"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer-helpful-links">
+        <div class="helpful-link">
+          <h1 class="link-header">PRODUCT</h1>
+          <ul class="footer-ul">
+            <li>
+              <a class="f-link" href="#">How it works</a>
+            </li>
+            <li>
+              <a class="f-link" href="#">Benefits</a>
+            </li>
+            <li>
+              <a class="f-link" href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+        <div class="helpful-link">
+          <h1 class="link-header">SUPPORT</h1>
+          <ul class="footer-ul">
+            <li>
+              <a class="f-link" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="f-link" href="#">Help</a>
+            </li>
+            <li>
+              <a class="f-link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="helpful-link">
+          <h1 class="link-header">ABOUT US</h1>
+          <ul class="footer-ul">
+            <li>
+              <a class="f-link" href="#">Our team</a>
+            </li>
+            <li>
+              <a class="f-link" href="#">Career</a>
+            </li>
+            <li>
+              <a class="f-link" href="#">Press</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="copyright">
+        <p class="copyright-paragraph">
+          &#169; 2017 - Elemento. All rights reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
