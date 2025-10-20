@@ -323,19 +323,21 @@ header {
 }
 
 .feature:not(:nth-child(3n))::after {
-  background-color: #dcdcdc;
+  border-right: 1px solid #dcdcdc;
   content: "";
-  height: 8rem;
+  height: 9rem;
   position: absolute;
   right: 0;
-  width: 0.0625rem;
+  top: 0;
+  width: 0;
 }
 
 .feature:nth-child(-n + 6)::before {
-  background-color: #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
   bottom: 1.875rem;
   content: "";
-  height: 0.0625rem;
+  height: 0;
+  left: 6%;
   position: absolute;
   width: 87%;
 }
