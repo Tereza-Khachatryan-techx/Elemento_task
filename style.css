@@ -231,7 +231,7 @@ header {
 }
 
 .section-description {
-  color: var(--text-color-gray);
+  color: var(--heading-color);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-light);
   line-height: var(--line-height-loose);
@@ -378,6 +378,7 @@ header {
 }
 
 .italic {
+  color: var(--footer-link);
   font-style: italic;
 }
 
