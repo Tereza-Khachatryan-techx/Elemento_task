@@ -17,6 +17,7 @@
 
 :root {
   --line-height-tight: 1;
+  --line-height-desc: 1.6rem;
   --line-height-loose: 2rem;
   --line-height-spacious: 2.625rem;
 
@@ -358,6 +359,13 @@ header {
   margin-top: 2.625rem;
   padding: 0.625rem;
   text-align: center;
+}
+
+.testimonials-desc {
+  color: var(--footer-link);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-desc);
 }
 
 .quote {
