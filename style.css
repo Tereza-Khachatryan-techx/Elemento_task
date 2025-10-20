@@ -306,7 +306,6 @@ header {
   grid-template-columns: repeat(3, 1fr);
   padding-top: 3.125rem;
   max-width: 71.25rem;
-  width: 100%;
 }
 
 .feature {
@@ -367,8 +366,6 @@ header {
   display: flex;
   gap: 1.25rem;
   margin-top: 3.875rem;
-  max-width: 29.375rem;
-  width: 100%;
 }
 
 .customer {
@@ -426,7 +423,6 @@ header {
   overflow: visible;
   padding: 0.625rem;
   position: relative;
-  width: 100%;
 }
 
 .card-arrows {
@@ -538,15 +534,13 @@ footer {
   display: flex;
   height: 4.375rem;
   justify-content: center;
-  margin-top: 3.75rem;
-  max-width: 22.5625rem;
-  width: 100%;
+  padding-top: 3.75rem;
 }
 
 .footer-website-links {
   display: flex;
   gap: 1.5rem;
-  margin-top: 1.6875rem;
+  padding-top: 1.6875rem;
 }
 
 .footer-link {
@@ -567,9 +561,6 @@ footer {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: auto;
-  max-width: 10.3125rem;
-  width: 100%;
 }
 
 .footer-ul {
@@ -868,6 +859,9 @@ footer {
   .mobile-store {
     flex-direction: column;
     gap: 0.625rem;
+  }
+  .become-first-heading {
+    font-size: var(--font-size-3xl);
   }
 }
 
