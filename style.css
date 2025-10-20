@@ -57,8 +57,8 @@ header {
   flex-wrap: wrap;
   height: 4.3rem;
   justify-content: space-between;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+  padding-left: 9.375rem;
+  padding-right: 9.375rem;
 }
 
 .links {
@@ -79,7 +79,7 @@ header {
 
 .link:hover::before {
   background-color: var(--color-blue-text);
-  bottom: -0.6rem;
+  top: 1.7rem;
   content: "";
   height: 0.25rem;
   left: 50%;
@@ -145,8 +145,10 @@ header {
 }
 
 .laptop {
+  width: 841px;
+  height: 695px;
   position: absolute;
-  top: 60%;
+  top: 28rem;
   width: 100%;
 }
 
@@ -154,7 +156,7 @@ header {
   background: var(--color-white);
   height: 0.375rem;
   position: absolute;
-  top: 50%;
+  top: 16.5rem;
   width: 2.625rem;
 }
 
@@ -173,7 +175,7 @@ header {
 .page-hero-links {
   display: flex;
   gap: 2rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 .page-hero-link {
   color: var(--color-white);
@@ -193,7 +195,7 @@ header {
   flex-wrap: wrap;
   gap: 1.875rem;
   justify-content: center;
-  top: 62%;
+  top: 28rem;
   position: absolute;
 }
 
@@ -253,7 +255,7 @@ header {
   height: 0.6875rem;
   left: 50%;
   position: absolute;
-  top: 70%;
+  top: 32rem;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -317,16 +319,19 @@ header {
   padding: 1.875rem 1.25rem;
   position: relative;
   text-align: left;
+  align-items: flex-start;
 }
 
 .feature-img {
+  width: 38px;
+  height: 38px;
   margin-top: 0.9375rem;
 }
 
 .feature:not(:nth-child(3n))::after {
   border-right: 1px solid #dcdcdc;
   content: "";
-  height: 9rem;
+  height: 9.5rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -338,9 +343,9 @@ header {
   bottom: 1.875rem;
   content: "";
   height: 0;
-  left: 6%;
+  left: 1rem;
   position: absolute;
-  width: 87%;
+  width: 90%;
 }
 
 .feature-card {
@@ -440,6 +445,11 @@ header {
   display: none;
 }
 
+.arrow {
+  width: 1.4375rem;
+  height: 1.375rem;
+}
+
 .arrow-left,
 .arrow-right {
   align-items: center;
@@ -450,7 +460,6 @@ header {
   justify-content: center;
   pointer-events: auto;
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   width: 1.875rem;
 }
@@ -485,6 +494,7 @@ header {
   height: 47.875rem;
   justify-content: center;
   padding-left: 5rem;
+  position: relative;
 }
 
 .become-first-heading {
@@ -514,21 +524,19 @@ header {
   text-align: left;
 }
 
-.image-wrapper {
-  position: absolute;
-  right: 3.125rem;
-}
-
 .floating-cards-img {
   position: absolute;
-  right: 1.25rem;
-  top: 16.3125rem;
+  right: 1rem;
+  bottom: 28rem;
+  z-index: 1;
 }
 
 .person-img {
   display: block;
   height: auto;
-  width: 38.0625rem;
+  right: 1rem;
+  bottom: 0;
+  position: absolute;
 }
 
 footer {
@@ -536,14 +544,12 @@ footer {
   background: var(--footer-color);
   display: flex;
   flex-direction: column;
-  height: auto;
   gap: 2rem;
 }
 
 .footer-logo-wrapper {
   align-items: center;
   display: flex;
-  height: 4.375rem;
   justify-content: center;
   padding-top: 3.75rem;
 }
@@ -554,18 +560,10 @@ footer {
   padding-top: 1.6875rem;
 }
 
-.footer-link {
-  background: var(--light-gray);
-  border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
 .footer-helpful-links {
   display: flex;
   gap: 7.9375rem;
   justify-content: center;
-  width: 100%;
 }
 
 .helpful-link {
@@ -606,6 +604,9 @@ footer {
 
 .copyright-paragraph {
   color: var(--footer-link);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
 }
 
 @media (max-width: 1139px) {
@@ -667,7 +668,6 @@ footer {
 
   .become-first {
     align-items: center;
-    height: auto;
     padding: 2.5rem 1.25rem;
   }
 
@@ -677,30 +677,36 @@ footer {
   }
 
   .image-wrapper {
-    margin-top: 3.75rem;
     position: relative;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .person-img {
-    margin: 0 auto;
-    max-width: 20rem;
-    width: 100%;
-    padding-left: 3.75rem;
+    position: static;
+    width: 12rem;
   }
 
   .floating-cards-img {
-    left: 80%;
-    top: 30%;
+    left: 10rem;
+    top: 8rem;
     transform: translateX(-50%);
-    width: 9.375rem;
+    width: 7rem;
+    position: absolute;
   }
 }
 
-@media (max-width: 795px) {
+@media (max-width: 1020px) {
+  .header {
+    padding: 0;
+  }
+
   .burger-menu {
     cursor: pointer;
     display: flex;
-    left: 1rem;
+    left: 1.5rem;
     position: absolute;
   }
 
@@ -754,7 +760,7 @@ footer {
     height: 1.5rem;
     pointer-events: none;
     position: absolute;
-    top: 50%;
+    top: 10rem;
     width: 100%;
   }
 
@@ -830,7 +836,7 @@ footer {
   }
 
   .dash {
-    top: 36%;
+    top: 18rem;
   }
 }
 
